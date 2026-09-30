@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>L'Atelier des Beaux-Arts — Materiales Maestros de Arte</title>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: EB Garamond & DM Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&amp;family=EB+Garamond:ital,wght@0,400..700;1,400..700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Configuration -->
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-error-container": "#93000a",
+            "background": "#fbf9f6",
+            "secondary": "#9b4426",
+            "on-primary-container": "#878381",
+            "surface-container-highest": "#e4e2df",
+            "primary-container": "#1d1b1a",
+            "on-tertiary-fixed-variant": "#574500",
+            "on-surface": "#1b1c1a",
+            "surface-dim": "#dbdad7",
+            "on-error": "#ffffff",
+            "surface": "#fbf9f6",
+            "surface-container-high": "#eae8e5",
+            "on-secondary": "#ffffff",
+            "tertiary-container": "#cca830",
+            "surface-container-low": "#f5f3f0",
+            "on-tertiary-fixed": "#241a00",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#ffdbd0",
+            "outline-variant": "#d0c4be",
+            "on-surface-variant": "#4d4541",
+            "outline": "#7e7570",
+            "primary": "#000000",
+            "on-secondary-container": "#75280c",
+            "surface-tint": "#615e5c",
+            "primary-fixed-dim": "#cbc5c3",
+            "surface-bright": "#fbf9f6",
+            "primary-fixed": "#e7e1df",
+            "surface-variant": "#e4e2df",
+            "tertiary-fixed": "#ffe088",
+            "surface-container-lowest": "#ffffff",
+            "tertiary-fixed-dim": "#e9c349",
+            "on-tertiary-container": "#4f3e00",
+            "on-primary-fixed-variant": "#494645",
+            "secondary-fixed-dim": "#ffb59d",
+            "on-primary-fixed": "#1d1b1a",
+            "surface-container": "#efeeeb",
+            "on-secondary-fixed-variant": "#7c2d11",
+            "inverse-on-surface": "#f2f0ed",
+            "on-tertiary": "#ffffff",
+            "secondary-container": "#fe906d",
+            "inverse-primary": "#cbc5c3",
+            "on-primary": "#ffffff",
+            "inverse-surface": "#30312f",
+            "on-background": "#1b1c1a",
+            "tertiary": "#735c00",
+            "on-secondary-fixed": "#390b00",
+            "error": "#ba1a1a"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+          "spacing": {
+            "margin-mobile": "1.25rem",
+            "space-xs": "0.375rem",
+            "space-lg": "2rem",
+            "gutter-mobile": "1rem",
+            "space-sm": "0.75rem",
+            "gutter": "1.5rem",
+            "space-xl": "3.5rem",
+            "space-md": "1.25rem",
+            "margin": "3.5rem"
+          },
+          "fontFamily": {
+            "display-lg": ["EB Garamond", "serif"],
+            "display-lg-mobile": ["EB Garamond", "serif"],
+            "label-sm": ["DM Sans", "sans-serif"],
+            "body-lg": ["DM Sans", "sans-serif"],
+            "headline-md": ["EB Garamond", "serif"],
+            "label-md": ["DM Sans", "sans-serif"],
+            "headline-lg": ["EB Garamond", "serif"],
+            "body-md": ["DM Sans", "sans-serif"],
+            "headline-lg-mobile": ["EB Garamond", "serif"],
+            "headline-sm": ["EB Garamond", "serif"],
+            "body-sm": ["DM Sans", "sans-serif"]
+          },
+          "fontSize": {
+            "display-lg": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "display-lg-mobile": ["38px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "label-sm": ["11px", { "lineHeight": "14px", "letterSpacing": "0.1em", "fontWeight": "500" }],
+            "body-lg": ["18px", { "lineHeight": "28px", "letterSpacing": "-0.005em", "fontWeight": "400" }],
+            "headline-md": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.08em", "fontWeight": "500" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "headline-sm": ["22px", { "lineHeight": "30px", "letterSpacing": "0.01em", "fontWeight": "500" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .custom-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased font-body-md text-body-md selection:bg-secondary-fixed selection:text-on-secondary-fixed pb-24">
+<!-- TopAppBar (Shared Component Execution) -->
+<header class="fixed top-0 left-0 w-full z-50 flex items-center justify-between px-margin-mobile py-space-sm bg-surface dark:bg-primary-container shadow-sm border-b border-outline-variant/30 dark:border-outline/20">
+<button aria-label="Abrir menú de navegación" class="p-1 text-on-surface hover:text-secondary transition-colors duration-150 active:opacity-70">
+<span class="material-symbols-outlined text-[24px]">menu</span>
+</button>
+<div class="flex flex-col items-center">
+<span class="font-headline-md text-headline-md tracking-tight text-on-surface dark:text-inverse-on-surface">L'Atelier des Beaux-Arts</span>
+<span class="font-label-sm text-[9px] tracking-[0.25em] text-outline uppercase -mt-1">Maison Fondée à Paris • 1884</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Buscar en el catálogo" class="p-1 text-on-surface hover:text-secondary transition-colors duration-150 active:opacity-70">
+<span class="material-symbols-outlined text-[22px]">search</span>
+</button>
+<button aria-label="Bolsa de adquisiciones" class="relative p-1 text-primary dark:text-inverse-primary hover:text-secondary transition-colors duration-150 active:opacity-70">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="absolute 1 top-0 right-0 w-2 h-2 rounded-full bg-secondary"></span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="pt-[68px]">
+<!-- Hero Section -->
+<section class="relative px-margin-mobile pt-space-lg pb-space-xl overflow-hidden bg-surface">
+<!-- Hallmark Seal Tag -->
+<div class="inline-flex items-center gap-2 mb-space-sm pl-2 border-l border-secondary">
+<span class="font-label-sm text-label-sm text-secondary tracking-widest uppercase">Graduación Maestra • Pureza Absoluta</span>
+</div>
+<!-- Headline -->
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-space-sm font-normal leading-tight">
+        El Rigor del Pigmento.<br/>
+<span class="italic font-display-lg-mobile text-secondary">La Maestría del Trazo.</span>
+</h1>
+<p class="font-body-md text-body-md text-on-surface-variant mb-space-lg max-w-sm">
+        Formulaciones de archivo fabricadas en pequeños lotes con prensado lento en piedra de pórfido y aglutinantes botánicos vírgenes para artistas consagrados.
+      </p>
+<!-- Editorial Hero Imagery -->
+<div class="relative w-full aspect-[4/3] bg-surface-container mb-space-lg overflow-hidden border border-outline-variant/40">
+<img alt="Herramientas maestras del atelier" class="w-full h-full object-cover" data-alt="An exquisite high-end studio still life showcasing authentic handmade artist oil paint tubes in lead-free metal, raw lapis lazuli and burnt sienna powdered pigments kept inside crystal stoppered glass vials, and premium Kolinsky red sable watercolor brushes resting on textured raw linen. Natural museum morning directional window lighting illuminates the warm ivory, ochre, deep soot, and terracotta colors. The aesthetic is tactile, luxurious, and historic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFfjAQ-KeKuUoVx_zlW7AcyvXN-bW86gtSRwstEwJczO-UNihiGIUlhVbOU3vopTd2M7vnN3bNEz9ZpilsJPX5aX-kcfMLv5uIKkg3wpE4QON-ogyzPND4IwwpcFp1MNYwzu6T0UwEg_KjNIOx1zJzPgAI_W5Vp16QAdE9CjUW2TGxVB3NXH1GosRArBAOzHvPcOBKkiWZfdPyFnk-IlMK3vIxScjf358w6f8rvPMbsrzWwv69GJM"/>
+<div class="absolute bottom-2 right-2 bg-surface/90 backdrop-blur-sm px-2 py-1 border border-outline-variant/30 text-[10px] tracking-widest uppercase font-label-sm text-on-surface-variant">
+          Atelier No. 04 • Pigmentum Verum
+        </div>
+</div>
+<!-- Hero Call To Actions -->
+<div class="flex flex-col gap-space-sm">
+<a class="w-full text-center bg-primary text-background py-3.5 px-space-lg font-label-md text-label-md uppercase tracking-[0.12em] hover:bg-secondary transition-colors duration-200 active:scale-[0.99]" href="#catalogo">
+          Explorar Colección Maestra
+        </a>
+<button class="w-full text-center bg-transparent border border-on-surface text-on-surface py-3 px-space-lg font-label-md text-label-md uppercase tracking-[0.12em] hover:bg-surface-container transition-colors duration-200 active:bg-surface-container-high">
+          Solicitar Catálogo Físico (180p)
+        </button>
+</div>
+</section>
+<!-- Key Atelier Badges (Tonal Matting) -->
+<section class="bg-surface-container-low py-space-md border-y border-outline-variant/30">
+<div class="px-margin-mobile flex flex-col gap-space-sm">
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">grain</span>
+<div>
+<h2 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Pigmentos Monopigmentarios Puros</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Sin cargas minerales inertes, extensores ni tonalidades falsas.</p>
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/20"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">texture</span>
+<div>
+<h2 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">100% Algodón Hecho a Mano</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Prensado tradicional en fieltro de lana con barbas naturales intactas.</p>
+</div>
+</div>
+<div class="w-full h-[1px] bg-outline-variant/20"></div>
+<div class="flex items-center gap-3">
+<span class="material-symbols-outlined text-secondary text-[22px]">verified</span>
+<div>
+<h2 class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface font-semibold">Grado Museo ASTM I</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Permanencia luminosa certificada para más de 150 años de exposición.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Curated Categories Carousel/Grid -->
+<section class="py-space-xl px-margin-mobile">
+<div class="flex items-baseline justify-between mb-space-md">
+<div>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-1">Especialidades</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Disciplinas de Taller</h2>
+</div>
+<span class="font-label-sm text-label-sm text-outline">01 — 04</span>
+</div>
+<!-- Categories 2x2 Bento Mobile Grid -->
+<div class="grid grid-cols-1 gap-space-md">
+<!-- Category 1 -->
+<article class="p-space-md bg-surface border border-outline-variant/40 relative overflow-hidden group">
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-sm text-[10px] text-tertiary uppercase tracking-widest font-mono">CAT. 01</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">arrow_outward</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Óleos &amp; Temple al Huevo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Pigmentos históricos molidos al sol en aceite de linaza sueco prensado en frío y emulsión de yema libre de conservantes químicos.
+          </p>
+<div class="h-32 w-full bg-surface-container overflow-hidden">
+<img alt="Muestrario de óleos puros" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300" data-alt="Macro detail photograph of thick impasto oil paint texture and hand-ground raw egg tempera paint swatches on wooden artist palette. The mineral rich pigments show genuine lapis lazuli ultramarine and yellow ochre with microscopic glistening crystal facets under gentle studio side lighting, high luxury art house style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCBBBZMGB2mkIDjgmoujSFnDfWjcJ-1TEWyNn3iXoT9hD0mbSEpD0DDVhHbgRRcKiQp8_M8JHGC86cXJSACd9xBpmk0RUrme-Qhm0eP8smMMilZrxsT6gEw-Mmd44qHmVG_GOUwMXwKD5XMNT9BqGJmjfGP1sRs91tQgboyJ9BmiZ4-26qBlmE5YweAybbFWoQSaZt83yNcbnKDqXwRFRQhskeVaeryu89-Epwt98bCiJRtJbZ_wP4"/>
+</div>
+</article>
+<!-- Category 2 -->
+<article class="p-space-md bg-surface border border-outline-variant/40 relative overflow-hidden group">
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-sm text-[10px] text-tertiary uppercase tracking-widest font-mono">CAT. 02</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">arrow_outward</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Pinceles Kolinsky &amp; Ardilla Kazan</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Mechón natural seleccionado uno a uno con virola de latón niquelado y plata sin costuras, montado sobre mango de cerezo laqueado.
+          </p>
+<div class="h-32 w-full bg-surface-container overflow-hidden">
+<img alt="Pincelería de pelo natural" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300" data-alt="Close-up macro shot of master handcrafted artist paintbrushes including Kolinsky red sable and Kazan squirrel hair with seamless silver ferrule and turned dark cherry wood handles lying neatly across a textured ivory paper backdrop under soft diffused directional illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTe2EDnyriVeMr0_p96QJGO1DICyEK1aqTTNutUPlo9D3GLsH8vgWc5ji1VTRPMqM2rYjimW2tTMs_nxiiOQloYcOL0WiTqFkI0xHpdjVSFCkFLt6_w7GFH4JaJdQZql4z_ZR286gqTzSdkImhsLEs5qTeQ67pBHw4NeaGMvQnTqlcVJMCahFE2_FKv5FX7whqorB_5Q8DNV5fZUMSJt_mBw_D7TS-WAqGj4PDIS2orO3eFbCek2Q"/>
+</div>
+</article>
+<!-- Category 3 -->
+<article class="p-space-md bg-surface border border-outline-variant/40 relative overflow-hidden group">
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-sm text-[10px] text-tertiary uppercase tracking-widest font-mono">CAT. 03</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">arrow_outward</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Papeles Prensados en Frío</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Hojas Arches puras, Fabriano rústico y papel washi kozo japonés elaborado en tina con ph neutro y encolado vegetal en masa.
+          </p>
+<div class="h-32 w-full bg-surface-container overflow-hidden">
+<img alt="Papel artesanal de algodón puro" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300" data-alt="Editorial close up photograph of stack of heavy 300gsm cold-pressed cotton watercolor paper showing rough deckled edges and natural deckle fibers. The soft daylight emphasizes the rich artisanal tooth and cream-toned archival paper structure in a serene minimal museum composition." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9h7MwtLhgvK9vR2DGtg-LBx5mk2qi37SBR3Ka95QFGd_zdiIbXNahpKSe4smILAT2UJi7oqv-SGpGDfMKTWF1X1Vu0mtYaGeC6YYwA77wE0YK5E2ghc6UOi2zBTpTTuJy2CizWxva03zwXPTu2yuDVF76m1o_zkYFO7ywW0W79w3PwWGhIdTZuRAlueBpUnVGY65UVUlfvBhVNS57KKspV1ovqhKFUsVRrCBqES9znSxOdfc78BQ"/>
+</div>
+</article>
+<!-- Category 4 -->
+<article class="p-space-md bg-surface border border-outline-variant/40 relative overflow-hidden group">
+<div class="flex items-start justify-between mb-space-sm">
+<span class="font-label-sm text-[10px] text-tertiary uppercase tracking-widest font-mono">CAT. 04</span>
+<span class="material-symbols-outlined text-on-surface-variant group-hover:text-secondary transition-colors">arrow_outward</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-1">Carbón, Grafito &amp; Sanguina</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md">
+            Barras de grafito amorfo de mina inglesa 9B a 9H, carbón de sarmiento y ramas de sauce tostadas en atmósfera anaeróbica controlada.
+          </p>
+<div class="h-32 w-full bg-surface-container overflow-hidden">
+<img alt="Barras de grafito y carbón de vid" class="w-full h-full object-cover grayscale contrast-125 hover:grayscale-0 transition-all duration-300" data-alt="Minimalist overhead arrangement of deep matte black vine charcoal sticks, raw graphite blocks, and warm terracotta sanguine chalk drawing sticks scattered on raw stone ground. High contrast chiaroscuro studio lighting, editorial fine arts catalog ambiance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFTACa9fc_NxWEQCqbJpQaYUYgnzKriYSCR6scUIrC1J4okesL0nJNmhl58QB27S6JnPdVbqLXq6ZX4Chlrxhvmpl4RhpHiu4gsx2KpmQovoMLOdmL7C_Z6rea1mn5-MKC6l_bYH2vHU6eIbxpFTvAKzA09OsWdavhe6JG-32JzqQaa381R47g8jaJ-tvleU0mvqw9j9R2h0icBRDvuJ3M7zsf3QPtWgawiSsVweR5KdYsnPVChvk"/>
+</div>
+</article>
+</div>
+</section>
+<!-- Featured Products Spotlight -->
+<section class="py-space-xl bg-surface-container-low border-t border-outline-variant/30 px-margin-mobile" id="catalogo">
+<div class="mb-space-lg">
+<div class="flex items-center gap-2 mb-1">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest">Gama Superior</span>
+</div>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface">Selección del Maestro</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Instrumentos numerados con ficha de pigmentación y certificado de permanencia.</p>
+</div>
+<div class="space-y-space-md">
+<!-- Product 1 -->
+<div class="bg-surface p-space-md border border-outline-variant/40 flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container mb-space-sm overflow-hidden">
+<img alt="Set Magistral Óleos de Cobalto y Cadmio" class="w-full h-full object-cover" data-alt="Product photograph of the luxury Master Cobalt and Cadmium Oil Paint Set housed in an oiled cedar wooden box. Six heavy metal tubes are arrayed next to glass swatch plates displaying intense ultramarine, cobalt turquoise, and genuine cadmium vermilion under warm daylight studio illumination." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCZd6h2Io-JEuB2DpYnCSYJ6oa-dcbOR93cwwuOv_mt66boVe537sgrUl16EvBy2p_RHNvrodvFg9S9gOh84hstSF9sK4ljR68gl5rUSYRN_cRI1ITHm7_Li00GH_vlB0Kl0_j6ZXk40QuB_VfYRe2Z6H5XMU0tIdX3a1wrGCdYjoiK8zTH_Xstq3JYkH_on-Q3HAA2vgI96_Qzdmyp6jJwtcsTOjNAEMrHV_pi_xYugygb7URKWFc"/>
+<span class="absolute top-2 left-2 bg-surface text-on-surface font-mono text-[10px] px-2 py-0.5 border border-outline-variant/30">
+              PB28 • PR108
+            </span>
+</div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Set Magistral Óleos de Cobalto y Cadmio</h3>
+<span class="font-label-md text-label-md font-semibold text-on-surface">$185</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            6 tubos de 40ml. Aglutinado con aceite de linaza decolorado por decantación solar. Cero cargas sintéticas.
+          </p>
+<!-- Technical Table Micro-spec -->
+<div class="border-t border-b border-outline-variant/30 py-2 my-2 flex justify-between font-label-sm text-[11px] text-outline">
+<span>RESISTENCIA: <strong class="text-on-surface">ASTM I ★★★</strong></span>
+<span>OPACIDAD: <strong class="text-on-surface">Semnoopaco</strong></span>
+<span>SERIE: <strong class="text-on-surface">6</strong></span>
+</div>
+<button class="mt-2 w-full py-2.5 bg-primary text-background font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors duration-150 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            Añadir a la Selección
+          </button>
+</div>
+<!-- Product 2 -->
+<div class="bg-surface p-space-md border border-outline-variant/40 flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container mb-space-sm overflow-hidden">
+<img alt="Pincel Redondo Kolinsky Serie Royale Nº 8" class="w-full h-full object-cover" data-alt="Editorial product shot of a single Kolinsky red sable series royale number 8 fine detail brush laid over a hand-drawn anatomical ink sketch. The seamless silver ferrule reflects delicate studio highlights, revealing the spring, razor point, and amber tones of the authentic hairs." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrnyq31oz6ktrgv5FLZofhVvKL3h2iitvk2EUbNVe5a8B1Edkp-0aF5Ktns7zKQhOFZ_CN4aZDtaypTCaX5uMiGgE8zSV6ABOrFHO6qj8NuRRX0lYvKoGWueqjfeS0QVcz3we8KqJoEGIJxGEC9nAEOGn8cIvZWOEf0moPuz5CLjft6WYSLqUTIMr5yP2BuPrGDMuMdbYcL_JlPqSGNNHGJyVf8kpkthuS1Y_PaD7Ig7cUo-rBQ84"/>
+<span class="absolute top-2 left-2 bg-surface text-on-surface font-mono text-[10px] px-2 py-0.5 border border-outline-variant/30">
+              KOLINSKY SIBERIA
+            </span>
+</div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Pincel Redondo Kolinsky Serie Royale Nº 8</h3>
+<span class="font-label-md text-label-md font-semibold text-on-surface">$74</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Punta cónica con reserva de carga elástica de retorno perfecto. Montado manualmente en París.
+          </p>
+<!-- Technical Table Micro-spec -->
+<div class="border-t border-b border-outline-variant/30 py-2 my-2 flex justify-between font-label-sm text-[11px] text-outline">
+<span>PELO: <strong class="text-on-surface">Mustela Sibirica</strong></span>
+<span>VIROLA: <strong class="text-on-surface">Plata 925</strong></span>
+<span>MANGO: <strong class="text-on-surface">Cerezo</strong></span>
+</div>
+<button class="mt-2 w-full py-2.5 bg-primary text-background font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors duration-150 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            Añadir a la Selección
+          </button>
+</div>
+<!-- Product 3 -->
+<div class="bg-surface p-space-md border border-outline-variant/40 flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container mb-space-sm overflow-hidden">
+<img alt="Bloc Pergamino Washi 300g 100% Fibras Kozo" class="w-full h-full object-cover" data-alt="Catalog flat lay product image of a handmade Washi Kozo paper block bound with dark green linen thread. The subtle translucent fiber texture is visible along the hand-torn edges, resting on a beige limestone surface in neutral morning shadow." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBi5JoCrCTmCPl8jhuG3941xY5HWmUV8nbWzsArG3jEx3kYVXmShi3bAg3ed6XT652HH7gaEV3M5Zxwh04tBvA5bAoX4QIZe88JxGhBQxAh6MAKNpuhXvAybPz3UEahXnZbG7CvelpDGQw4WLRDOFpfF-fUPkU_mImdHKv5WDX78ElWRpyVzxkUfMjseWOuddmVaHU3BcbeqbJaVmQK_QuEEyN3iEdKepBzCde1BBbHne1URZs4xCU"/>
+<span class="absolute top-2 left-2 bg-surface text-on-surface font-mono text-[10px] px-2 py-0.5 border border-outline-variant/30">
+              100% KOZO FIBER
+            </span>
+</div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Bloc Pergamino Washi 300g Fibras Kozo</h3>
+<span class="font-label-md text-label-md font-semibold text-on-surface">$52</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            20 pliegos encuadernados al estilo japonés tradicional. Adecuado para aguada, sumi-e y temple magro.
+          </p>
+<!-- Technical Table Micro-spec -->
+<div class="border-t border-b border-outline-variant/30 py-2 my-2 flex justify-between font-label-sm text-[11px] text-outline">
+<span>PESO: <strong class="text-on-surface">300 g/m²</strong></span>
+<span>ENCOLADO: <strong class="text-on-surface">Dosa vegetal</strong></span>
+<span>GRANULADO: <strong class="text-on-surface">Fino</strong></span>
+</div>
+<button class="mt-2 w-full py-2.5 bg-primary text-background font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors duration-150 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            Añadir a la Selección
+          </button>
+</div>
+<!-- Product 4 -->
+<div class="bg-surface p-space-md border border-outline-variant/40 flex flex-col">
+<div class="relative w-full aspect-square bg-surface-container mb-space-sm overflow-hidden">
+<img alt="Caja de Nogal con 24 Grafitos Puros" class="w-full h-full object-cover" data-alt="Still life photograph of an open handcrafted solid walnut artist box containing 24 pure artist grade graphite pencils and cylindrical paper blending stumps nestled into tailored velvet slots, accompanied by a brass sharpener on a parchment table surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBtdUUTSB011sXVuk8Ag6-fBR726HKAt5cs0IOfTQv0Y0iFQKd8QEuCiYKAi60bOe37IG2AwjS2kigl3VOIno-TG0U2w4po9HltmZvU2h4SJEMW6119h9apZ9FQlPTEq7Ge9Vqx5ZuTESSnvff8JcL5oF2xqGDS2SmIpzn4kn-DMBN0rrtfyrrPXwKJGmS0Lq9c4PWG3V5ty-tVl6mgystRTSA_z2d1xy3amIcskIDvAHmUB7VV5oI"/>
+<span class="absolute top-2 left-2 bg-surface text-on-surface font-mono text-[10px] px-2 py-0.5 border border-outline-variant/30">
+              9B HASTA 9H
+            </span>
+</div>
+<div class="flex justify-between items-baseline mb-1">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Caja de Nogal con 24 Grafitos Puros</h3>
+<span class="font-label-md text-label-md font-semibold text-on-surface">$115</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-sm">
+            Estuche de madera maciza de nogal encerado con difuminos de fieltro de lana prensada y goma maleable.
+          </p>
+<!-- Technical Table Micro-spec -->
+<div class="border-t border-b border-outline-variant/30 py-2 my-2 flex justify-between font-label-sm text-[11px] text-outline">
+<span>MINA: <strong class="text-on-surface">Grafito Cumberland</strong></span>
+<span>MADERA: <strong class="text-on-surface">Cedro de California</strong></span>
+<span>CALIBRE: <strong class="text-on-surface">3.8 mm</strong></span>
+</div>
+<button class="mt-2 w-full py-2.5 bg-primary text-background font-label-sm text-label-sm uppercase tracking-widest hover:bg-secondary transition-colors duration-150 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined text-[16px]">add</span>
+            Añadir a la Selección
+          </button>
+</div>
+</div>
+</section>
+<!-- El Manifiesto del Atelier (Editorial Poetic Story) -->
+<section class="py-space-xl px-margin-mobile bg-surface relative overflow-hidden">
+<div class="max-w-md mx-auto">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-space-xs">
+          Tratado de la Materia
+        </span>
+<h2 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mb-space-md">
+          El Manifiesto del Taller
+        </h2>
+<div class="space-y-space-sm font-body-md text-on-surface-variant leading-relaxed">
+<p>
+            Rechazamos de manera irrevocable la industrialización ciega del color. En un mundo saturado de polímeros acrílicos y colorantes azoicos de caducidad prematura, nuestro atelier permanece anclado en la geología y la botánica del Renacimiento.
+          </p>
+<blockquote class="pl-4 border-l-2 border-secondary italic font-headline-sm text-on-surface my-4">
+            «El pigmento no es un tinte: es un cuerpo mineral que dialoga con la luz sin doblegarse al paso de los siglos.»
+          </blockquote>
+<p>
+            Cada lote de lapislázuli afgano, malaquita de los Urales y ocres de Rosellón se muele pacientemente a ritmo humano sobre losas de granito con aglutinantes de prensado en frío, garantizando que el gesto del pintor mantenga su vibración intacta dentro de quinientos años.
+          </p>
+</div>
+<div class="mt-space-md pt-space-sm border-t border-outline-variant/30 flex items-center justify-between">
+<div>
+<p class="font-label-md text-label-md uppercase tracking-wider text-on-surface font-medium">Henri de Saint-Aubin</p>
+<p class="font-body-sm text-body-sm text-outline">Maestro Molinero Principal</p>
+</div>
+<span class="material-symbols-outlined text-[36px] text-tertiary">draw</span>
+</div>
+</div>
+</section>
+<!-- Respaldo de Maestros (Testimonials) -->
+<section class="py-space-xl bg-surface-container px-margin-mobile border-y border-outline-variant/30">
+<div class="mb-space-md">
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-1">Criterio Crítico</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Respaldo de Maestros</h2>
+</div>
+<div class="space-y-space-md">
+<!-- Quote 1 -->
+<article class="p-space-md bg-surface border border-outline-variant/40">
+<div class="flex text-tertiary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-[19px] italic text-on-surface mb-space-sm leading-snug">
+            «La reología de su Blanco de Plomo y Óleo de Nogal no tiene parangón en Europa. Permite fundidos en el claroscuro facial sin que la pincelada pierda su volumen tridimensional.»
+          </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant/50 overflow-hidden">
+<img alt="Retrato de Julián Arrieta" class="w-full h-full object-cover grayscale" data-alt="Editorial black and white character portrait of a classical fine arts portrait painter in his atelier surrounded by canvas easels and soft directional window light, wearing a linen work shirt." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBROJ2eoxp-6p3gwnXBgEvV2_xzudl78hZzsv-Kgc2EtkPZcggRiZ8aENTWPz_H8oT8LmwMg3CP171llSZ0aXq1_B9Rcd9ruwhbkHpQqNzFdezu9KLvPL1ZqHZp7H8VFtpTTknQsOQ5S67429wGJJUGgFnX2hhpDSYgByztu308oLi6_aXOQP9bt3RTOQgNkgB27FdZ5w_PmqGWBvc-efXbKJPbk38duw_ID60QLunJeABe_ZCRJrA"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Julián Arrieta</p>
+<p class="font-body-sm text-[12px] text-outline">Pintor Retratista • Academia de Bellas Artes</p>
+</div>
+</div>
+</article>
+<!-- Quote 2 -->
+<article class="p-space-md bg-surface border border-outline-variant/40">
+<div class="flex text-tertiary mb-space-xs">
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-headline-sm text-[19px] italic text-on-surface mb-space-sm leading-snug">
+            «El papel de lino de 640 gramos absorbe las aguadas más complejas sin combarse jamás. El negro de humo conserva un terciopelo óptico inigualable.»
+          </p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-surface-container-high border border-outline-variant/50 overflow-hidden">
+<img alt="Retrato de Elena Valls" class="w-full h-full object-cover grayscale" data-alt="Intimate monochrome profile portrait of an acclaimed editorial book illustrator examining an ink drawing with precision magnifier inside a bookbinding studio, sophisticated lighting and texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDhbtq3yQM7Lu1noEuBye0gOlKWsuUXiPopACx2Q-tmR4qoKPd90BScatSlZ4QR3aHE_XExMCx_1-xQnL-xgqGIiLq8FOGqC0CXYj7DjoOZec3cYUtJhe4af03ztczNWlMCQwlbKXgV1_qcwc7O6z5jzl-tUY2EGbOV15KZMcaoir2zYgH7i2WI1FJtq0_vL1f5vI6SB_3Rbx6S6rX4zDC7_bq8aKmxVTcIZSE46TYvXWC46784T_E"/>
+</div>
+<div>
+<p class="font-label-md text-label-md text-on-surface font-semibold">Elena Valls</p>
+<p class="font-body-sm text-[12px] text-outline">Grabadora e Ilustradora Editorial</p>
+</div>
+</div>
+</article>
+</div>
+</section>
+<!-- Newsletter Exclusiva: Los Cuadernos del Taller -->
+<section class="py-space-xl px-margin-mobile bg-surface">
+<div class="border border-on-surface p-space-md bg-surface-container-low text-center">
+<span class="material-symbols-outlined text-secondary text-[32px] mb-2">auto_stories</span>
+<span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary block mb-1">
+          Correspondencia Semanal
+        </span>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">Los Cuadernos del Taller</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-space-md max-w-xs mx-auto">
+          Invitaciones exclusivas a masterclasses a puerta cerrada, recetas de barnices de almáciga y acceso prioritario a pigmentos de recolección limitada.
+        </p>
+<form class="flex flex-col gap-space-xs" onsubmit="event.preventDefault();">
+<input class="w-full px-space-sm py-3 bg-surface border border-outline-variant/60 font-body-sm text-on-surface placeholder:text-outline focus:border-on-surface focus:outline-none rounded-none text-center" placeholder="su.correo.maestro@estudio.com" required="" type="email"/>
+<button class="w-full py-3 bg-primary text-background font-label-md text-label-md uppercase tracking-[0.15em] hover:bg-secondary transition-colors duration-150 rounded-none" type="submit">
+            Inscribirse al Pliego
+          </button>
+</form>
+<p class="font-label-sm text-[10px] text-outline mt-3">Respetamos el silencio creativo. Cancelación en un solo click.</p>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component Execution) -->
+<footer class="w-full px-margin-mobile pt-space-lg pb-space-xl flex flex-col gap-space-md bg-surface-container-high dark:bg-inverse-surface border-t border-outline-variant/40 dark:border-outline/20">
+<div class="flex flex-col gap-2">
+<span class="font-headline-md text-headline-md tracking-tight text-on-surface dark:text-inverse-on-surface">L'Atelier des Beaux-Arts</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant dark:text-outline-variant">
+        Taller de molienda y conservación histórica de suministros de bellas artes. Preservando las fórmulas originales desde el siglo XIX.
+      </p>
+</div>
+<!-- Navigation Links from JSON Blueprint -->
+<nav class="flex flex-col gap-2 py-2 border-y border-outline-variant/30">
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#">
+        Manifiesto de Pigmentos
+      </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#">
+        Certificados de Calidad
+      </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#">
+        Términos y Privacidad
+      </a>
+<a class="font-label-sm text-label-sm text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150" href="#">
+        Contacto de Estudio
+      </a>
+</nav>
+<!-- Atelier Physical Studio Info -->
+<div class="flex justify-between items-start font-body-sm text-[12px] text-outline">
+<div>
+<p class="font-semibold text-on-surface dark:text-inverse-on-surface">Atelier Central</p>
+<p>14 Rue Bonaparte, 75006 Paris</p>
+<p>estudio@atelierbeauxarts.fr</p>
+</div>
+<div class="text-right">
+<p class="font-semibold text-on-surface dark:text-inverse-on-surface">Garantía</p>
+<p>ASTM D-4302</p>
+<p>Envío de Archivo Neutro</p>
+</div>
+</div>
+<!-- Copyright -->
+<p class="font-label-sm text-label-sm text-outline pt-2">
+      © 2024 L'Atelier des Beaux-Arts. Todos los derechos reservados.
+    </p>
+</footer>
+<!-- BottomNavBar (Shared Component Execution for Mobile) -->
+<!-- Contextual Active: 'Atelier' is highlighted since this is the Atelier landing page -->
+<nav class="fixed bottom-0 left-0 w-full z-50 flex justify-around items-center px-margin-mobile py-space-xs bg-surface dark:bg-primary-container shadow-sm border-t border-outline-variant/30 dark:border-outline/20">
+<!-- Tab 1: Atelier (Active) -->
+<a class="flex flex-col items-center justify-center text-secondary dark:text-secondary-fixed font-medium active:scale-95 transition-transform duration-150" href="#">
+<span class="material-symbols-outlined text-[22px]" style="font-variation-settings: 'FILL' 1;">palette</span>
+<span class="font-label-sm text-label-sm mt-0.5">Atelier</span>
+</a>
+<!-- Tab 2: Colecciones (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined text-[22px]">auto_stories</span>
+<span class="font-label-sm text-label-sm mt-0.5">Colecciones</span>
+</a>
+<!-- Tab 3: Catálogo (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95" href="#catalogo">
+<span class="material-symbols-outlined text-[22px]">tune</span>
+<span class="font-label-sm text-label-sm mt-0.5">Catálogo</span>
+</a>
+<!-- Tab 4: Bolsa (Inactive) -->
+<a class="flex flex-col items-center justify-center text-on-surface-variant dark:text-outline-variant hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-150 active:scale-95" href="#">
+<span class="material-symbols-outlined text-[22px]">shopping_bag</span>
+<span class="font-label-sm text-label-sm mt-0.5">Bolsa</span>
+</a>
+</nav>
+</body></html>
